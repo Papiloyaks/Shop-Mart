@@ -12,7 +12,7 @@ const Paystack = () => {
     const [lastName, setLastName] = useState("");
 
     const payWithPayStack = (e) => {
-        const publicKey = import.meta.env.VITE_APP_PAYSTACK_KEY;
+        const publicKey = 'pk_test_db6ba7663112c3b323f7996c95bbedf9a9f6c1c8'
         if(email === "" || firstName === "" || lastName === ""){
             alert('all input field are required')
         }  else{
@@ -41,8 +41,8 @@ const Paystack = () => {
     return (
         <>
             <div className='w3-container w3-row'>
-                <div className='w3 container w3-orange'>
-                    <h3 className='w3-center text-white' style={{marginTop:20}}>Make Payment</h3>
+                <div className='w3 container'>
+                    <h3 className='w3-center text-white bg-danger' style={{marginTop:20}}>Make Payment</h3>
                 </div>
                 <div className='w3-container w3-quarter'></div>
                 <div className='w3-container w3-half' style={{marginTop:60}}>
@@ -64,7 +64,7 @@ const Paystack = () => {
                                 <label htmlFor="last-name">Last Name</label>
                                 <input type="text" id='last-name' className='w3-input' onChange={(e) => setLastName(e.target.value)} value={lastName} />
                             </div>
-                            <button style={{ marginBottom: 10 }} className='text-white w3-btn w3-block w3-orange' type='submit' onClick={payWithPayStack}>PAY</button>
+                            <button style={{ marginBottom: 10 }} className='text-white w3-btn w3-block bg-danger' type='submit' onClick={payWithPayStack}>PAY</button>
                         </form>
                     </div>
                 </div>

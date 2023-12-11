@@ -64,27 +64,27 @@ const Getitem = () => {
 
                                     <div className='d-flex'>
                                         <div>
-                                            <button onClick={() => deleteItem(index)} className='my-3' id='delete'><MdDelete />   REMOVE</button>
+                                            <button onClick={() => deleteItem(index)} className='my-3 bg-danger text-white' id='delete'><MdDelete />   REMOVE</button>
                                         </div>
                                         <div>
                                             <div className='plusminus my-3'>
                                                 <span className='minus rounded cursor-pointer'>
-                                                    <AiOutlineMinus className='rounded' id='decrease' size={29} onClick={() => dispatch(decrement())} />
+                                                    <AiOutlineMinus className='rounded bg-danger text-white' id='decrease' size={29} onClick={() => dispatch(decrement())} />
                                                 </span>
                                                 {myCounter}
                                                 <span className='add rounded'>
-                                                    <GrAdd id='increase' className='rounded' size={29} onClick={() => dispatch(increment())} />
+                                                    <GrAdd id='increase' className='rounded  bg-danger text-white' size={29} onClick={() => dispatch(increment())} />
                                                 </span>
                                             </div>
                                         </div>
 
                                     </div>
                                 </div>
-                                <div className='zero rounded border fs-5'>
-                                    <p className='subCart1'>CART SUMMARY</p>
-                                    <span className='subCart'>Sub Total</span>
-                                    <span className='pay'>#{newPrice}</span>
-                                    <div className='checkout rounded'>
+                                <div className='zero rounded border fs-5 bg-danger'>
+                                    <p className='subCart1 text-white'>CART SUMMARY</p>
+                                    <span className='subCart text-white'>Sub Total</span>
+                                    <span className='pay text-white'>#{newPrice}</span>
+                                    <div className='checkout rounded bg-white text-dark'>
                                         <Link className='pay text-decoration-none fs-5' to="/paystack"><span  className='fs-5'>CHECKOUT</span>#{newPrice}</Link>
                                         
                                     </div>

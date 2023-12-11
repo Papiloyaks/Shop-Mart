@@ -103,7 +103,7 @@ const Commerce = () => {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg" id='nav'>
+            <nav className="navbar navbar-expand-lg bg-danger" id='nav'>
                 <div className="container">
                     <a className="navbar-brand fw-bold text-light" href="#">Sneakers</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -133,9 +133,9 @@ const Commerce = () => {
                         </div>
                         
                         </div>
-                        <div id='cart'>
+                        <div id='cart' className='py-3'>
                         <span id='cartItem'>{cartItem} </span> <img onClick={productCount} real={real} id='productCount' src={cart} alt="" /> <span id='cartItem'></span>
-                        <img className='ms-4' src={avatar} alt="" width={30} />
+                        <img className='papi' src={avatar} alt="" width={30} />
                         </div>
                         </nav>
 
@@ -155,7 +155,7 @@ const Commerce = () => {
                     </div>
                     <div id='comp' className="col-lg-7">
                         <h3 className='mt-5 fw-bold'>SNEAKER COMPANY</h3>
-                        <h2 id='fall'>Fall Limited Edition Sneakers</h2>
+                        <h2 id='fall text-dark'>Fall Limited Edition Sneakers</h2>
                         <p className='mt-5'>The low profile sneakers are your perfect casual wear <br /> companion. Featuring a durable rubbber outer sole, they'll <br /> withstand everything the weather can offer.</p>
                         <span id='per'>50,000</span> <span id='cent'>20%</span>
                         <h5 className='text-decoration-line-through'>#60,000</h5>
@@ -178,9 +178,9 @@ const Commerce = () => {
 
 
                             <div className="col-lg-10">
-                                <div id='button' className='rounded w-100'>
+                                <div id='button' className='rounded w-100 bg-danger text-white'>
                                     <div className='mx-auto text-center'>
-                                        <AiOutlineShoppingCart /><button onClick={productCart} className='btn fw-bold'>ADD TO CART</button>
+                                        <AiOutlineShoppingCart /><button onClick={productCart} className='btn fw-bold text-white'>ADD TO CART</button>
                                     </div>
                                 </div>
                             </div>
