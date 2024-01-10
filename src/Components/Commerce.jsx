@@ -4,11 +4,15 @@ import avatar from '../assets/images/avatar.png'
 import product1 from '../assets/images/product1.jpg'
 import product2 from '../assets/images/product2.jpg'
 import product3 from '../assets/images/product3.jpg'
+import coco from '../assets/images/coco.jpg'
+import blue from '../assets/images/blue.jpeg'
 import product4 from '../assets/images/product4.jpg'
-import product12 from '../assets/images/product12.jpg'
-import image2 from '../assets/images/image2.jpg'
 import image3 from '../assets/images/image3.jpg'
 import image4 from '../assets/images/image4.jpg'
+import chanel from  '../assets/images/chanel.jpg'
+import product12 from '../assets/images/product12.jpg'
+import image2 from '../assets/images/image2.jpg'
+import blee from '../assets/images/blee.jpeg'
 import { AiOutlineMinusSquare, AiOutlineShoppingCart, AiOutlineMinus } from 'react-icons/ai'
 import { CiSquarePlus } from 'react-icons/ci'
 import { GrFormNext, GrFormPrevious, GrAdd } from 'react-icons/gr'
@@ -36,6 +40,7 @@ const Commerce = () => {
     // const {num, setnum} = useContext(AppContext)
     const Navigate = useNavigate()
     const [current, setCurrent] = useState(0)
+    const [rent,setRent] = useState(0)
     const [cartItem, setCartItem] = useState("")
     const [real, setReal] = useState("")
 
@@ -87,6 +92,8 @@ const Commerce = () => {
         product1, product2, product3, product4
     ]
 
+    
+
 
     let length = images.length
     const handleNext = () => {
@@ -99,10 +106,12 @@ const Commerce = () => {
         setCurrent(newCurrent < 0 ? length - 1 : newCurrent)
         console.log(current);
     }
+    
 
 
     return (
         <>
+        <div>
             <nav className="navbar navbar-expand-lg bg-danger" id='nav'>
                 <div className="container">
                     <a className="navbar-brand fw-bold text-light" href="#">Sneakers</a>
@@ -187,6 +196,7 @@ const Commerce = () => {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
 
 
